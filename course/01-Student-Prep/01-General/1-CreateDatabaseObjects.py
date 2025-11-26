@@ -41,8 +41,8 @@ from brickops.datamesh.naming import dbname
 # COMMAND ----------
 
 # If you want more info, you can enable logging
-# import logging
-# logging.getLogger("brickops").setLevel(logging.INFO)
+import logging
+logging.getLogger("brickops").setLevel(logging.INFO)
 
 # COMMAND ----------
 

@@ -9,7 +9,7 @@ from pathlib import Path
 
 deploy_notebooks = [
     str(path)
-    for path in Path("/Workspace/Repos/yourusername/databricks-dataops-course/orgs/acme/domains/transport/projects/").glob(
+    for path in Path("/Workspace/Repos/dampergud1/databricks-dataops-course/orgs/acme/domains/transport/projects/").glob(
         "**/deploy"
     )
     if "example_" not in str(path)
@@ -18,6 +18,7 @@ deploy_notebooks = [
 display(deploy_notebooks)
 
 # COMMAND ----------
+
 with concurrent.futures.ThreadPoolExecutor() as executor:
     futures = [
         executor.submit(dbutils.notebook.run, str(notebook), timeout_seconds=180)

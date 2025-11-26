@@ -6,7 +6,7 @@
             "task_key": "Deploy_all",
             "run_if": "ALL_SUCCESS",
             "notebook_task": {
-                "notebook_path": "/Workspace/Repos/anders.rorvik@knowit.no/databricks-dataops-course/deploy/deploy_or_update_all_jobs",
+                "notebook_path": "/Workspace/Repos/dampergud1/databricks-dataops-course/deploy/deploy_or_update_all_jobs",
                 "source": "WORKSPACE"
             },
             "timeout_seconds": 0,

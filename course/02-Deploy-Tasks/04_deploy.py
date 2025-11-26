@@ -47,7 +47,13 @@
 
 # MAGIC %md
 # MAGIC
-# MAGIC Answer here...
+# MAGIC job points to code
+# MAGIC job run is an execution of said code
+# MAGIC
+
+# COMMAND ----------
+
+
 
 # COMMAND ----------
 
@@ -60,4 +66,4 @@
 
 # MAGIC %md
 # MAGIC
-# MAGIC Answer here...
+# MAGIC commit id postfix

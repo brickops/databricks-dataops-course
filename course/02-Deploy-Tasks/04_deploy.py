@@ -47,7 +47,7 @@
 
 # MAGIC %md
 # MAGIC
-# MAGIC Answer here...
+# MAGIC A job is script or collection of script that together forms a pipeline. A job run is a specific instance of this job / a specific run. 
 
 # COMMAND ----------
 
@@ -60,4 +60,4 @@
 
 # MAGIC %md
 # MAGIC
-# MAGIC Answer here...
+# MAGIC Via the deployment.yml file

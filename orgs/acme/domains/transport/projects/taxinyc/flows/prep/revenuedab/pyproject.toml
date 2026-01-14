@@ -17,17 +17,18 @@ package-name = { git = "https://github.com/brickops/brickops.git", rev = "945da8
 
 [dependency-groups]
 dev = [
-    "databricks-connect==15.4.*",
-    "databricks-dlt>=0.3.0",
-    "databricks-sdk>=0.45.0",
-    "mypy>=1.15.0",
-    "pip>=25.1.1",
-    "pre-commit>=4.1.0",
-    "pydoclint>=0.6.6",
-    "pytest-cov>=6.0.0",
-    "pytest-mock>=3.14.0",
-    "pytest>=8.3.5",
-    "ruff>=0.11.9",
+    "databricks-bundles",
+#    "databricks-connect==15.4.*",
+#    "databricks-dlt>=0.3.0",
+#    "databricks-sdk>=0.45.0",
+#    "mypy>=1.15.0",
+#    "pip>=25.1.1",
+#    "pre-commit>=4.1.0",
+#    "pydoclint>=0.6.6",
+#    "pytest-cov>=6.0.0",
+#    "pytest-mock>=3.14.0",
+#    "pytest>=8.3.5",
+#    "ruff>=0.11.9",
 ]
 
 [tool.uv]

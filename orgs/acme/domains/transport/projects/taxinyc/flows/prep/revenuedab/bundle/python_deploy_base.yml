@@ -2,7 +2,8 @@ experimental:
   python:
     # Activate virtual environment before loading resources defined in Python.
     # Functions called to load resources defined in Python. See resources/__init__.py
-    venv_path: ../.venv
+    # venv_path: ../.venv
+    # venv_path: .venv
     resources:
       - "resources:load_resources"
     mutators:

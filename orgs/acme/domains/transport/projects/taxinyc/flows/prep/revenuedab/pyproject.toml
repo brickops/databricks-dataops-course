@@ -1,23 +1,24 @@
 [project]
 name = "revenuedab"
 version = "0.1.0"
-description = "trip"
+description = "revenuedab"
 authors = [
-    { name = "trip", email = "trip@trip.no" },
+    { name = "trip", email = "trip@trip.trip" },
 ]
 readme = "README.md"
 requires-python = ">=3.11,<4.0"
-scripts = { "main" = "trip.main:main" }
+scripts = { "main" = "revenuedab.main:main" }
 classifiers = ["Programming Language :: Python :: 3.11", "Operating System :: OS Independent"]
 dependencies = ["brickops", "databricks-bundles"]
 
 [tool.uv.sources]
-# brickops = { path = "../brickops", editable = true }
-package-name = { git = "https://github.com/brickops/brickops.git", rev = "945da8aba4dd33350c687bd8c9fbecae52114b56" }
+brickops = { path = "/Users/paalvibe/dev/work/knowit/databricks/brickops", editable = true }
+# package-name = { git = "https://github.com/brickops/brickops.git", rev = "945da8aba4dd33350c687bd8c9fbecae52114b56" }
 
 [dependency-groups]
 dev = [
     "databricks-connect==15.4.*",
+    "databricks-bundles==0.268.0",
     "databricks-dlt>=0.3.0",
     "databricks-sdk>=0.45.0",
     "mypy>=1.15.0",

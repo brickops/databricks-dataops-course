@@ -4,6 +4,7 @@ from databricks.bundles.jobs import (
     PerformanceTarget,
     Task,
     NotebookTask,
+    TaskDependency,
 )
 
 job = Job(
@@ -27,11 +28,15 @@ job = Job(
             notebook_task=NotebookTask(notebook_path="src/borough_population.py"),
         ),
         Task(
+            # NotebookTaskDict(
             task_key="revenue_per_inhabitant",
             notebook_task=NotebookTask(
                 notebook_path="src/revenue_by_borough.py",
-                depends_on=["revenue_by_borough", "borough_population"],
             ),
+            depends_on=[
+                TaskDependency(task_key="revenue_by_borough"),
+                TaskDependency(task_key="borough_population"),
+            ],
         ),
     ],
 )

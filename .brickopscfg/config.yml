@@ -1,13 +1,13 @@
 naming:
   job:
-    prod: "{domain}_{project}_{env}_{flow}"
-    other: "{domain}_{project}_{env}_{flow}_{username}_{gitbranch}_{gitshortref}"
+    prod: "{domain}_{project}_{target}_{flow}"
+    other: "{domain}_{project}_{target}_{flow}_{username}_{gitbranch}_{gitshortref}"
   pipeline:
-    prod: "{domain}_{project}_{env}_dlt"
-    other: "{domain}_{project}_{env}_{username}_{gitbranch}_{gitshortref}_dlt"
+    prod: "{domain}_{project}_dlt"
+    other: "[{target} {username}] {domain}_{project}_{gitbranch}_{gitshortref}_dlt"
   catalog:
     prod: "{org}_{domain}_{project}"
     other: "{org}_{domain}_{project}"
   db:
     prod: "{db}"
-    other: "{env}_{username}_{gitbranch}_{gitshortref}_{db}"
+    other: "{target}_{username}_{gitbranch}_{gitshortref}_{db}"

@@ -86,7 +86,7 @@ os.listdir(volume_path)
 
 
 filename = "New_York_City_Population_by_Borough__1950_-_2040.csv"
-local_csv_path = f"static_data/{filename}"
+local_csv_path = f"../static_data/{filename}"
 volume_csv_path = f"{volume_path}/{filename}"
 shutil.copyfile(local_csv_path, volume_csv_path)
 

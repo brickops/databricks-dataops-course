@@ -4,7 +4,7 @@ bundle:
 include:
   - bundle/variables.yml
   - bundle/targets.yml
-  - resources/*.yml
+#  - resources/*.yml
 
 artifacts:
   platform:

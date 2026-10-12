@@ -12,7 +12,8 @@ classifiers = ["Programming Language :: Python :: 3.11", "Operating System :: OS
 dependencies = ["brickops", "databricks-bundles"]
 
 [tool.uv.sources]
-brickops = { path = "/Users/paalvibe/dev/work/knowit/databricks/brickops", editable = true }
+brickops = { path = "~/databricksloc/brickops", editable = true }
+# brickops = { git = "https://github.com/brickops/brickops.git", rev = "dc37d72e31976a342aecc280d28f1cc96c9253e6" }
 # package-name = { git = "https://github.com/brickops/brickops.git", rev = "945da8aba4dd33350c687bd8c9fbecae52114b56" }
 
 [dependency-groups]

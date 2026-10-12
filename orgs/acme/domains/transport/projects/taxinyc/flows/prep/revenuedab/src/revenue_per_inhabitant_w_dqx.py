@@ -5,7 +5,16 @@
 
 # COMMAND ----------
 
-# MAGIC %pip install brickops=0.3.16
+# Install brickops only if not already present. The wheel is pushed to the
+# UC volume with 'make push-brickops'
+import importlib.util
+import subprocess
+import sys
+
+if importlib.util.find_spec("brickops") is None:
+    subprocess.check_call(
+        [sys.executable, "-m", "pip", "install", "/Volumes/acme_transport_taxinyc/default/libs/brickops-0.3.0-py3-none-any.whl"]
+    )
 
 # COMMAND ----------
 

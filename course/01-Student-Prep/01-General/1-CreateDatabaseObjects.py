@@ -29,9 +29,9 @@
 
 # COMMAND ----------
 
-# %pip install brickops=0.3.16
+# %pip install brickops==0.3.19
 # %pip install git+https://github.com/brickops/brickops.git@feature/file-cfg
-%pip install brickops=0.3.16
+%pip install brickops==0.3.19
 
 # COMMAND ----------
 

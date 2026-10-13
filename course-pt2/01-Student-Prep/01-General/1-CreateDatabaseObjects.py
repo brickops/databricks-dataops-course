@@ -19,7 +19,7 @@
 
 # COMMAND ----------
 
-# MAGIC %pip install brickops=0.3.16
+# MAGIC %pip install brickops==0.3.19
 
 # COMMAND ----------
 
@@ -28,7 +28,7 @@
 
 # COMMAND ----------
 
-# MAGIC %pip install brickops==0.3.16
+# MAGIC %pip install brickops==0.3.19
 
 # COMMAND ----------
 
